@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const createMurkUp = (data) => {
-  console.log(data);
   const murkUp = data.products
     .map(({ title, price, description }) => {
       return `<li><h3>${title}</h3><p>${price}</p><p>${description}</p></li>`;
